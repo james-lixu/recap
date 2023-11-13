@@ -1,4 +1,5 @@
-import { Outlet, Navigate } from "react-router-dom";
+import { Outlet, Navigate } from "react-router-dom"
+//import Slogan from '../assets/images/slogan.png'
 
 const AuthLayout = () => {
   const isAuthenticated = false;

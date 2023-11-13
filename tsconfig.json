@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
+
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "types": ["vite-plugin-svgr/client"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -21,8 +23,13 @@
     "noFallthroughCasesInSwitch": true,
     
     /* Shadcn */
-    
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
-  "include": ["src"],
+  "include": ["src", "src/custom.d.ts",],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

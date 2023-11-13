@@ -246,6 +246,21 @@
   }
 }
 
+.label .slogan {
+  color: #ed9354;
+  font-family: "Dawning of a New Day-Regular", Helvetica;
+  font-size: 75px;
+  font-weight: 400;
+  left: 50%; 
+  transform: translateX(-50%); 
+  bottom: 10px; 
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute; 
+  text-align: center;
+  width: 2089px;
+}
+
 @layer components {
   /* SHADCN COMPONENTS */
   /* Form */
