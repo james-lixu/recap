@@ -246,21 +246,6 @@
   }
 }
 
-.label .slogan {
-  color: #ed9354;
-  font-family: "Dawning of a New Day-Regular", Helvetica;
-  font-size: 75px;
-  font-weight: 400;
-  left: 50%; 
-  transform: translateX(-50%); 
-  bottom: 10px; 
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute; 
-  text-align: center;
-  width: 2089px;
-}
-
 @layer components {
   /* SHADCN COMPONENTS */
   /* Form */
@@ -292,4 +277,9 @@
   .shad-button_ghost {
     @apply flex gap-4 items-center justify-start hover:bg-transparent hover:text-white !important;
   }
+}
+
+.logo-image {
+  stroke: #feb5a9;
+  color: #feb5a9;
 }

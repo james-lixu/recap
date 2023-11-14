@@ -1,5 +1,4 @@
 import { Outlet, Navigate } from "react-router-dom"
-//import Slogan from '../assets/images/slogan.png'
 
 const AuthLayout = () => {
   const isAuthenticated = false;
@@ -13,7 +12,7 @@ const AuthLayout = () => {
             <Outlet />
           </div>
           <img
-            src="src/assets/images/landingscreen.png"
+            src="/assets/images/landingscreen.png"
             alt="Landing Page"
             className="block h-screen w-full object-cover bg-no-repeat"
           />
