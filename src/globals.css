@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Playball&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -258,7 +259,8 @@
   }
 
   .shad-input {
-    @apply h-12 bg-dark-4 border-none placeholder:text-light-4 focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
+    @apply h-10 border-none placeholder:text-black ring-1 ring-darker-red focus-visible:ring-0 focus-visible:ring-offset-2 ring-offset-light-1 focus:ring-darker-red ring-offset-off-pink !important;
+    background-color: rgba(250, 220, 180, 0.5);
   }
 
   .shad-textarea {
@@ -267,7 +269,7 @@
 
   /* Button */
   .shad-button_primary {
-    @apply bg-primary-500 hover:bg-primary-500 text-light-1 flex gap-2 !important;
+    @apply bg-orange-800 hover:bg-darker-red text-light-1 flex gap-2 !important;
   }
 
   .shad-button_dark_4 {
@@ -277,9 +279,11 @@
   .shad-button_ghost {
     @apply flex gap-4 items-center justify-start hover:bg-transparent hover:text-white !important;
   }
+  
 }
 
-.logo-image {
-  stroke: #feb5a9;
-  color: #feb5a9;
+.logo-container {
+  width: 200px;
+  height: 140px;
+  padding-top: 0%;
 }

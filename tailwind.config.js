@@ -22,6 +22,12 @@ export default {
         'primary-600': '#5D5FEF',
         'secondary-500': '#FFB620',
         'off-white': '#D0DFFF',
+        'off-pink': '#ec7b7b',
+        'off-purple': '#e79a8d',
+        'off-yellow': '#fadcb4',
+        'dark-purple': '#9A9AEB',
+        'dark-red': '#91422d',
+        'darker-red': '#751100',
         'red': '#FF5A5A',
         'dark-1': '#000000',
         'dark-2': '#09090A',
@@ -42,6 +48,8 @@ export default {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        jaldi: ['Jaldi', 'sans-serif'],
+        playball: ['Playball', 'cursive;'],
 
       },
       keyframes: {
