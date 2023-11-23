@@ -59,14 +59,14 @@ const SignupForm = () => {
       password: values.password,
     });
     if (!session) {
-      return toast({ title: "Sign in failed. Please try again." });
+      return toast({ title: "Sign up failed. Please try again." });
     }
     const isLoggedIn = await checkAuthUser();
     if (isLoggedIn) {
       form.reset();
-      navigate("/");
+      navigate("/signin");
     } else {
-      return toast({ title: "Signup failed, please try again." });
+      return toast({ title: "Sign up failed, please try again." });
     }
   }
 
@@ -79,10 +79,10 @@ const SignupForm = () => {
 
         {/* Form background */}
         <div className="sm:w-420 flex-center flex-col">
-          <h2 className="pt-2 mt-3 mb-3 text-dark-red font-playball">
+          <h2 className="pt-2 mt-3 mb-3 text-willow-grove font-playball">
             share your favorite memories
           </h2>
-          <p className="text-dark-red small-medium md:base-regular underline font-playball bold">
+          <p className="text-willow-grove small-medium md:base-regular underline font-playball bold">
             SIGN UP
           </p>
 
@@ -96,13 +96,13 @@ const SignupForm = () => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-dark-red underline font-playball text-sm">
+                  <FormLabel className="text-willow-grove underline font-playball text-sm">
                     Name
                   </FormLabel>
                   <FormControl>
                     <Input
                       type="text"
-                      className="shad-input text-darker-red font-playball"
+                      className="shad-input text-willow-grove font-playball"
                       {...field}
                     />
                   </FormControl>
@@ -117,13 +117,13 @@ const SignupForm = () => {
               name="username"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-dark-red underline font-playball text-sm">
+                  <FormLabel className="text-willow-grove underline font-playball text-sm">
                     Username
                   </FormLabel>
                   <FormControl>
                     <Input
                       type="text"
-                      className="shad-input text-darker-red font-playball"
+                      className="shad-input text-willow-grove font-playball"
                       {...field}
                     />
                   </FormControl>
@@ -138,13 +138,13 @@ const SignupForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-dark-red underline font-playball text-sm">
+                  <FormLabel className="text-willow-grove underline font-playball text-sm">
                     Email
                   </FormLabel>
                   <FormControl>
                     <Input
                       type="email"
-                      className="shad-input text-darker-red font-playball"
+                      className="shad-input text-willow-grove font-playball"
                       {...field}
                     />
                   </FormControl>
@@ -159,13 +159,13 @@ const SignupForm = () => {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-dark-red underline font-playball text-sm">
+                  <FormLabel className="text-willow-grove underline font-playball text-sm">
                     Password
                   </FormLabel>
                   <FormControl>
                     <Input
                       type="password"
-                      className="shad-input text-darker-red font-playball"
+                      className="shad-input text-willow-grove font-playball"
                       {...field}
                     />
                   </FormControl>
@@ -176,7 +176,7 @@ const SignupForm = () => {
 
             <Button
               type="submit"
-              className="shad-button_primary  text-dark-red font-playball"
+              className="shad-button_primary  text-willow-grove font-playball"
             >
               {isCreatingAccount ? (
                 <div className="flex center gap-2">
@@ -188,11 +188,11 @@ const SignupForm = () => {
               )}
             </Button>
 
-            <p className="text-small font-playball text-   text-center">
+            <p className="text-small font-playball mt-12 text-silver-sand text-center">
               Already have an account?{" "}
               <Link
                 to="/signin"
-                className="text-dark-red text-small underline font-playball text-center"
+                className="text-willow-grove text-small underline font-playball text-center"
               >
                 Log in
               </Link>

@@ -259,8 +259,8 @@
   }
 
   .shad-input {
-    @apply h-10 border-none placeholder:text-black ring-1 ring-darker-red focus-visible:ring-0 focus-visible:ring-offset-2 ring-offset-light-1 focus:ring-darker-red ring-offset-off-pink !important;
-    background-color: rgba(250, 220, 180, 0.5);
+    @apply h-10 border-none placeholder:text-black ring-1 ring-willow-grove focus-visible:ring-0 focus-visible:ring-offset-2 ring-offset-light-1 focus:ring-willow-grove ring-offset-clay-ash text-black !important;
+    background-color: rgba(180, 188, 188, 0.5);
   }
 
   .shad-textarea {
@@ -269,7 +269,7 @@
 
   /* Button */
   .shad-button_primary {
-    @apply bg-orange-800 hover:bg-darker-red text-light-1 flex gap-2 !important;
+    @apply bg-willow-grove hover:bg-clay-ash text-raffia flex gap-2 !important;
   }
 
   .shad-button_dark_4 {

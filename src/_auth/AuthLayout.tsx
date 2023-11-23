@@ -12,7 +12,7 @@ const AuthLayout = () => {
             <Outlet />
           </div>
           <img
-            src="/assets/images/landingpage.png"
+            src="/assets/images/authpagescreen.png"
             alt="Landing Page"
             className="block h-screen w-full object-cover bg-no-repeat"
           />
