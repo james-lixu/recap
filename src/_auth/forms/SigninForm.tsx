@@ -52,7 +52,7 @@ const SigninForm = () => {
 
   return (
     <Form {...form}>
-      <div className="relative flex flex-col items-center justify-center mt-10 pt-0 px-6 pb-6 rounded-lg shadow-md">
+      <div className="relative flex flex-col items-center justify-center pt-0 px-6 pb-6 rounded-lg shadow-md">
         <div className="logo-container">
           <img src="/assets/images/recap-logo.svg" alt="Recap logo" />
         </div>
@@ -117,7 +117,7 @@ const SigninForm = () => {
               className="shad-button_primary  text-willow-grove font-playball"
             >
               {isUserLoading ? (
-                <div className="flex center gap-2">
+                <div className="flex center">
                   Loading...
                   <Loader />
                 </div>
@@ -126,8 +126,8 @@ const SigninForm = () => {
               )}
             </Button>
 
-            <p className="text-small font-playball text-clay-ash mt-3 text-center">
-              Don't have an account yet?{" "}
+            <p className="text-small font-playball text-willow-grove text-center">
+              Don't have an account?{" "}
               <Link
                 to="/signup"
                 className="text-willow-grove text-small underline font-playball text-center hover:text-clay-ash"

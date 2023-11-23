@@ -34,6 +34,7 @@ export default {
         'clay-ash': '#B3C4AD',
         'silver-sand': '#B4BCBC',
         'raffia': '#EDDCBC',
+        'dark-teal': '#6a7c72',
       },
       screens: {
         'xs': '480px',

@@ -23,7 +23,7 @@ import { useUserContext } from "@/context/AuthContext";
 
 const SignupForm = () => {
   const { toast } = useToast();
-  const { checkAuthUser, isPending: isUserLoading } = useUserContext();
+  const { checkAuthUser } = useUserContext();
   const navigate = useNavigate();
 
   const {
@@ -33,7 +33,6 @@ const SignupForm = () => {
 
   const {
     mutateAsync: signinAccount,
-    isPending: isSigningIn,
   } = useSigninAccount();
 
   const form = useForm<z.infer<typeof SignupValidation>>({
@@ -72,14 +71,14 @@ const SignupForm = () => {
 
   return (
     <Form {...form}>
-      <div className="relative flex flex-col items-center justify-center pt-0 px-6 pb-6 rounded-lg shadow-md">
+      <div className="relative flex flex-col items-center justify-center mt-8 pt-0 px-6 pb-6 rounded-lg shadow-md">
         <div className="logo-container">
           <img src="/assets/images/recap-logo.svg" alt="Recap logo" />
         </div>
 
         {/* Form background */}
         <div className="sm:w-420 flex-center flex-col">
-          <h2 className="pt-2 mt-3 mb-3 text-willow-grove font-playball">
+          <h2 className="pt-2 mt-3 mb-3 text-clay-ash font-playball">
             share your favorite memories
           </h2>
           <p className="text-willow-grove small-medium md:base-regular underline font-playball bold">
@@ -188,11 +187,11 @@ const SignupForm = () => {
               )}
             </Button>
 
-            <p className="text-small font-playball mt-12 text-silver-sand text-center">
+            <p className="text-small font-playball mt-2 text-silver-sand text-center">
               Already have an account?{" "}
               <Link
                 to="/signin"
-                className="text-willow-grove text-small underline font-playball text-center"
+                className="text-willow-grove text-small underline font-playball text-center hover:text-clay-ash"
               >
                 Log in
               </Link>
