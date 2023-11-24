@@ -220,11 +220,11 @@
 
   /* Left sidebar */
   .leftsidebar {
-    @apply hidden md:flex px-6 py-10 flex-col justify-between min-w-[270px] bg-dark-2;
+    @apply hidden md:flex px-6 py-10 flex-col justify-between min-w-[270px] bg-dark-2 text-raffia;
   }
 
   .leftsidebar-link {
-    @apply rounded-lg base-medium hover:bg-primary-500 transition;
+    @apply rounded-lg base-medium hover:bg-willow-grove transition;
   }
 
   /* Post Card */
@@ -238,7 +238,7 @@
 
   /* Topbar */
   .topbar {
-    @apply sticky top-0 z-50 bg-dark-2 w-full;
+    @apply sticky top-0 z-50 md:hidden bg-dark-2 w-full;
   }
 
   /* User card */
