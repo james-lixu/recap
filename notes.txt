@@ -1,0 +1,6 @@
+Frontend: Vite + React + Tailwind CSS
+-shadcn
+
+Backend: Appwrite, React Query
+
+react-dropzone used for file uploading

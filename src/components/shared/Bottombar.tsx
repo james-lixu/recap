@@ -14,17 +14,17 @@ const Bottombar = () => {
             to={link.route}
             className={`${
               isActive && "rounded-[10px] bg-willow-grove "
-            } flex-center flex-col gap-1 p-2 transition`}
+            } flex-center flex-col gap-2 px-8 py-1 transition`}
           >
             <img
               src={link.imgURL}
               alt={link.label}
-              width={16}
-              height={16}
+              width={18}
+              height={18}
               className={`${isActive && "invert-white"}`}
             />
 
-            <p className="tiny-medium text-raffia">{link.label}</p>
+            <p className="medium text-raffia font-handlee font-bold">{link.label}</p>
           </Link>
         );
       })}

@@ -22,7 +22,7 @@ const Topbar = () => {
           <img
             src="/assets/images/logo.png"
             alt="logo"
-            width={75}
+            width={100}
             height={25}
           />
         </Link>
@@ -32,7 +32,7 @@ const Topbar = () => {
             <img
               src={user.imageUrl || "/assets/icons/profile-placeholder.svg"}
               alt="profile picture"
-              className="h-6 w-6 rounded-full"
+              className="h-8 w-8 rounded-full"
             />
           </Link>
           <Button

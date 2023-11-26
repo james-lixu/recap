@@ -48,6 +48,7 @@ export default {
         inter: ['Inter', 'sans-serif'],
         jaldi: ['Jaldi', 'sans-serif'],
         playball: ['Playball', 'cursive;'],
+        handlee: ['Handlee', 'cursive'],
 
       },
       keyframes: {

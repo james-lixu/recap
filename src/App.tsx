@@ -2,10 +2,10 @@ import AuthLayout from "./_auth/AuthLayout";
 import SigninForm from "./_auth/forms/SigninForm";
 import SignupForm from "./_auth/forms/SignupForm";
 import RootLayout from "./_root/RootLayout";
-import { Home } from "./_root/pages";
+import { CreatePost, EditPost, Home, Profile, Timelapse } from "./_root/pages";
 import "./globals.css";
 import { Routes, Route } from "react-router-dom";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 
 const App = () => {
   return (
@@ -20,6 +20,10 @@ const App = () => {
         {/** Private Routes */}
         <Route element={<RootLayout />}>
           <Route index element={<Home />} />
+          <Route path="profile/:id/*" element={<Profile />} />
+          <Route path="/createpost" element={<CreatePost />} />
+          <Route path="/editpost" element={<EditPost />} />
+          <Route path="/timelapse" element={<Timelapse />} />
         </Route>
       </Routes>
       <Toaster />
