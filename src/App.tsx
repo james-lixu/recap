@@ -2,7 +2,7 @@ import AuthLayout from "./_auth/AuthLayout";
 import SigninForm from "./_auth/forms/SigninForm";
 import SignupForm from "./_auth/forms/SignupForm";
 import RootLayout from "./_root/RootLayout";
-import { CreatePost, EditPost, Home, Profile, Timelapse } from "./_root/pages";
+import { CreatePost, EditPost, Home, Profile, TimeFrame } from "./_root/pages";
 import "./globals.css";
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="profile/:id/*" element={<Profile />} />
           <Route path="/createpost" element={<CreatePost />} />
           <Route path="/editpost" element={<EditPost />} />
-          <Route path="/timelapse" element={<Timelapse />} />
+          <Route path="/timeframe" element={<TimeFrame />} />
         </Route>
       </Routes>
       <Toaster />

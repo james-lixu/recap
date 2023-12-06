@@ -34,8 +34,8 @@ export const bottombarLinks = [
   },
   {
     imgURL: "/assets/icons/bookmark.svg",
-    route: "/timelapse",
-    label: "Timelapse",
+    route: "/timeframe",
+    label: "Timeframe",
   },
   {
     imgURL: "/assets/icons/wallpaper.svg",
